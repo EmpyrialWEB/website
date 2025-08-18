@@ -1,98 +1,177 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="shortcut icon" href="/img/empyrial-logo.png" type="image/x-icon">
-    <title>Empyrial</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Empyrial — Solana Validator</title>
+  <meta name="description" content="Stake SOL with Empyrial — 0% fee, high performance, robust security." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="img/site.webmanifest">
+  <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#58b6ff">
+  <meta name="msapplication-TileColor" content="#0a1220">
+  <meta name="theme-color" content="#0a1220">
+  
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <img src="/img/empyrial-logo.png" alt="logo">
-            <ul class="nav-links">
-                <li class="nav-link">
-                    <a href="#main">About</a>
-                </li>
-                <li class="nav-link">
-                    <a href="#">GitHub</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main" id="main"> 
-        <section class="main-content">
-            <h1 class="main-content_header">0% fee and high performance</h1>
-            <ul class="adv">
-                <li class="adv-item">
-                    Low Fee Structure
-                </li>
-                <li class="adv-item">
-                    High Performance
-                </li>
-                <li class="adv-item">
-                    Robust Security
-                </li>
-                <li class="adv-item">
-                    24/7 Support
-                </li>
-            </ul>
-        </section>
-        <section class="main-newsletter">
-            <h2 class="newsletter-header">Sign up for our newsletter</h2>
-            <p class="newsletter-text">
-                Be the first to know about releases and industry news and insights.
-            </p>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">
+        <img class="brand-badge" aria-hidden="true" src="img/empyrial-logo.png" alt="logo">
+        <span>Empyrial</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="https://stakewiz.com/validator/5frYQSynysBe1akCVK9tNBJ5j8jgBgUsjAXAgqHxvykJ" target="_blank" rel="noopener">Stakewiz</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-            <form class="form" action="/submit" method="post">
-                <div class="user-inputs">
-                    <input type="text" id="email" name="email" 
-                    placeholder="Enter your email" required>
+  <!-- HERO -->
+  <main class="hero container" id="top">
+    <div class="hero-grid">
+      <section>
+        <span class="tag">0% fee • high performance</span>
+        <h1 class="h1">Stake SOL with <span style="color:var(--accent)">Empyrial</span></h1>
+        <p class="sub">Non-custodial Solana validator focused on performance, reliability and transparent ops.</p>
+
+        <div class="bullets">
+            <div class="bullet">
+                <span class="check" aria-hidden="true">✓</span>
+                    <div>
+                        <strong>Low fee structure</strong>
+                        <br>
+                        <span class="muted">Maximize your rewards with a 0% commission intro.</span>
+                    </div>
                 </div>
-                <p class="privacy-text">
-                    We care about your data in our <a href="">privacy policy</a>
-                </p>
-                <a class="submit-btn" id="submit" href="#">
-                  Subscribe
-                </a>
-              </form>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer-content"> 
-            <div class="footer-card">
-                <img class="footer-card_img" src="/img/social-emp.svg" alt="">
-                <h3 class="footer-card_header">Low Fee Structure</h3>
-                <p class="footer-card_text">
-                    Our lower fee structure not only makes our services more accessible but also maximizes the return on investment for our clients.
-                </p>
-            </div>
-            <div class="footer-card">
-                <img class="footer-card_img" src="/img/heart-emp.svg" alt="">
-                <h3 class="footer-card_header">High Performance</h3>
-                <p class="footer-card_text">
-                    Leveraging state-of-the-art hardware, we ensure high performance and seamless operation of our blockchain nodes.
-                </p>
-            </div>
-            <div class="footer-card">
-                <img class="footer-card_img" src="/img/graph-emp.svg" alt="">
-                <h3 class="footer-card_header">Robust Security</h3>
-                <p class="footer-card_text">
-                    Our robust security measures, encompassing advanced encryption and continuous monitoring, are meticulously implemented to safeguard.
-                </p>
-            </div>
-            <div class="footer-card">
-                <img class="footer-card_img" src="/img/smile-emp.svg" alt="">
-                <h3 class="footer-card_header">24/7 Support</h3>
-                <p class="footer-card_text">
-                    24/7 validator support, ensuring round-the-clock reliability and uninterrupted service
-                </p>
-            </div>
+                <div class="bullet">
+                    <span class="check" aria-hidden="true">✓</span>
+                        <div>
+                            <strong>High performance</strong>
+                            <br>
+                            <span class="muted">Modern hardware, tuned for Solana.</span>
+                        </div>
+                </div>
+                <div class="bullet">
+                    <span class="check" aria-hidden="true">✓</span>
+                        <div>
+                            <strong>Robust security</strong>
+                            <br>
+                            <span class="muted">Hardened configs and active monitoring.</span>
+                        </div>
+                </div>
+                <div class="bullet">
+                    <span class="check" aria-hidden="true">✓</span>
+                        <div>
+                            <strong>24/7 support</strong>
+                            <br>
+                            <span class="muted">We respond quickly, any time.</span>
+                        </div>
+                </div>
         </div>
-    </footer>
+
+        <div class="cta">
+          <a class="btn primary" href="https://stakewiz.com/validator/5frYQSynysBe1akCVK9tNBJ5j8jgBgUsjAXAgqHxvykJ" target="_blank" rel="noopener">Delegate on Stakewiz →</a>
+          <a class="btn" href="https://solscan.io/account/5frYQSynysBe1akCVK9tNBJ5j8jgBgUsjAXAgqHxvykJ" target="_blank" rel="noopener">View on Solscan</a>
+        </div>
+
+        <div style="margin-top:18px; max-width:520px" class="card">
+          <div style="padding:14px 14px 16px">
+            <label class="muted" for="val">Validator address</label>
+            <div class="addr" style="margin-top:8px">
+              <code id="val">5frYQSynysBe1akCVK9tNBJ5j8jgBgUsjAXAgqHxvykJ</code>
+              <button class="copy" id="copy" aria-label="Copy validator address">Copy</button>
+            </div>
+            <p class="muted" style="margin:10px 2px 0">Use the address above in any Solana wallet to delegate directly.</p>
+          </div>
+        </div>
+      </section>
+
+      <aside class="card" aria-hidden="true" style="padding:28px; min-height:280px">
+        <svg viewBox="0 0 600 420" width="100%" height="100%" role="img" aria-label="Abstract neon graphic">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+              <stop stop-color="#00c2ff"/>
+              <stop offset="1" stop-color="#1b6fff"/>
+            </linearGradient>
+            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="8" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#g1)" opacity="0.06"/>
+          <g filter="url(#glow)" stroke="url(#g1)" stroke-width="3" fill="none" opacity=".9">
+            <path d="M80,210 C120,60 480,60 520,210 C480,360 120,360 80,210 Z"/>
+            <circle cx="300" cy="210" r="90"/>
+            <circle cx="300" cy="210" r="40"/>
+          </g>
+        </svg>
+      </aside>
+    </div>
+  </main>
+
+  <!-- FEATURES -->
+  <section id="features" class="features container">
+    <div class="grid">
+      <article class="feature card">
+        <h3>Low fee structure</h3>
+        <p class="muted">Keep more of your rewards. Our 0% fee intro makes staking with Empyrial a no-brainer for new delegators.</p>
+      </article>
+      <article class="feature card">
+        <h3>High performance</h3>
+        <p class="muted">Carefully tuned hardware and networking to stay in consensus and capture more blocks.</p>
+      </article>
+      <article class="feature card">
+        <h3>Robust security</h3>
+        <p class="muted">Defense in depth: restricted access, regular patching, and continuous monitoring.</p>
+      </article>
+      <article class="feature card">
+        <h3>24/7 support</h3>
+        <p class="muted">We're small, fast, and responsive. Need help delegating? Ping us anytime.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ABOUT / CONTACT -->
+  <section id="about" class="container" style="padding:10px 0 70px">
+    <div class="card" style="padding:26px">
+      <h2 style="margin:0 0 10px">About Empyrial</h2>
+      <p class="muted">Empyrial is an independent Solana validator. Our focus is consistent performance, safe operations, and helpful support for delegators of any size.</p>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container foot-flex">
+      <p>© <span id="y"></span> Empyrial</p>
+      <div class="links">
+        <a href="https://stakewiz.com/validator/5frYQSynysBe1akCVK9tNBJ5j8jgBgUsjAXAgqHxvykJ" target="_blank" rel="noopener">Stakewiz</a>
+        <a href="mailto:empyrial.xyz@gmail.com" aria-label="Email">Email</a>
+        <a href="#" aria-label="Discord (coming soon)">Discord</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('copy').addEventListener('click', function(){
+      const el = document.getElementById('val').textContent.trim();
+      navigator.clipboard.writeText(el).then(()=>{
+        this.textContent='Copied!';
+        this.style.borderColor='var(--accent)';
+        setTimeout(()=>{this.textContent='Copy'; this.style.borderColor='';}, 1400);
+      });
+    });
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
